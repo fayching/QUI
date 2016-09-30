@@ -1,0 +1,15 @@
+
+.animate_tab{
+	-webkit-transition:all 0.5s cubic-bezier(0, 0, 0.55, 1.42);
+}
+
+
+.ui-actionsheet.show .animate-actionsheet-down{
+	-webkit-transform:translate3d(0,100%,0);
+	-webkit-transition:all 0.2s linear;
+}
+
+.ui-actionsheet .animate-actionsheet-up{
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-transition:all 0.2s linear;
+}

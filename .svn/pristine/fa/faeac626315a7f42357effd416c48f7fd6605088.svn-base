@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>QUI Demo</title>
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+        <link rel="stylesheet" href="../css/frozen.css">
+        <link rel="stylesheet" href="demo_v2.css">
+        <script src="http://frozenui.github.io/frozenui/lib/zepto.min.js"></script>
+    </head>
+    
+    <body ontouchstart>
+        <header>
+            <h1>QUI</h1>
+            <h2>让SNG的产品体验更统一</h2>
+        </header>
+        <section class="ui-container">
+            <section id="list">
+                <table class="demo-item ui-table ui-border">
+                    <tbody class="demo-block">
+                        <tr class="">
+                            <td class="ui-border-t" data-href="btn.html">
+                                <div>
+                                    <div class="icon-button icon"></div>
+                                    <div class="tit">Button</div>
+                                </div>
+                            </td>
+                            <td class="ui-border-t" data-href="list.html">
+                                <div>
+                                    <div class="icon-cell icon"></div>
+                                    <div class="tit">Cell</div>
+                                </div>
+                            </td>
+                            <td class="ui-border-t" data-href="tooltips.html">
+                                <div>
+                                    <div class="icon-toast icon"></div>
+                                    <div class="tit">Toast</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ui-border-t" data-href="dialog.html">
+                                <div>
+                                    <div class="icon-dialog icon"></div>
+                                    <div class="tit">Dialog</div>
+                                </div>
+                            </td>
+                            <td class="ui-border-t" data-href="panel.html">
+                                <div>
+                                    <div class="icon-panel icon"></div>
+                                    <div class="tit">Panel</div>
+                                </div>
+                            </td>
+                            <td class="ui-border-t" data-href="actionsheet.html">
+                                <div>
+                                    <div class="icon-actionsheet icon"></div>
+                                    <div class="tit">ActionSheet</div>
+                                </div>
+                            </td>
+                            <!-- <td class="ui-border-t" data-href="arrowtdnk.html">
+                                <div>
+                                    <div class="icon-progress icon"></div>
+                                    <div class="tit">Progress</div>
+                                </div>
+                            </td> -->
+                            <!-- <td class="ui-border-t" data-href="border.html">
+                                <div>
+                                    <div class="icon-msg icon"></div>
+                                    <div class="tit">Msg</div>
+                                </div>
+                            </td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td class="ui-border-t" data-href="nowrap.html">
+                                <div>
+                                    <div class="icon-article icon"></div>
+                                    <div class="tit">Artcle</div>
+                                </div>
+                            </td> -->
+                            
+                            <!-- <td class="ui-border-t" data-href="whitespace.html">
+                                <div>
+                                    <div class="icon-icons icon"></div>
+                                    <div class="tit">Icons</div>
+                                </div>
+                            </td> -->
+                        </tr>
+                        <tr>
+                            
+                            <td class="ui-border-t" data-href="tab.html">
+                                <div>
+                                    <div class="icon-tab icon"></div>
+                                    <div class="tit">Tab</div>
+                                </div>
+                            </td>
+                            <td class="ui-border-t ui-border-r" data-href="searchbar.html">
+                                <div>
+                                    <div class="icon-searchbar icon"></div>
+                                    <div class="tit">SearchBar</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section> 
+        </section><!-- /.ui-container-->
+        <script>
+        $('#list td').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        </script>
+    </body>
+</html>

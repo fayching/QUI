@@ -1,0 +1,126 @@
+.ui-panel-subtitle{
+    font-size: $font-size-sub;
+    color: $txt-info;
+}
+.ui-panel-title-tips{
+    font-size: $font-size-tips;
+    color: $txt-info;
+    position: absolute;
+    right: $wrap-padding;
+    top: 0;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-align: center;
+}
+.ui-arrowlink .ui-panel-title-tips{
+    right: $wrap-link-padding;
+}
+
+.ui-panel,
+.ui-panel-pure,
+.ui-panel-center,
+.ui-panel-center-multi,
+.ui-panel-more {
+    .ui-arrowlink:before {
+        line-height: $line-height-title;
+        margin-top: -$line-height-title/2;
+    }
+}
+
+.ui-panel{
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    > h1,> h2,> h3{
+        height: $line-height-title;
+        font-size: 18px;
+        position: relative;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        padding-left: $wrap-padding;
+        padding-right: $wrap-padding;
+        span{
+            display: -webkit-box;
+        }
+    }
+    .ui-panel-subtitle {
+        padding-top: 4px;
+        margin-left: 5px;
+    }
+}
+
+.ui-panel-pure {
+    color: $txt-info;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    > h2,> h3{
+        height: 30px;
+        font-size: 14px;
+        position: relative;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        padding-left: $wrap-padding;
+        span{
+            display: -webkit-box;
+        }
+    }
+}
+
+.ui-panel-center,
+.ui-panel-center-multi {
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+    > h1,> h2, > h3{
+        font-size: 18px;
+        position: relative;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        text-align: center;
+        letter-spacing: 2px;
+        span{
+            display: -webkit-box;
+            letter-spacing: 0;
+        }
+    }
+}
+.ui-panel-center {
+    > h1,> h2, > h3{
+        height: $line-height-title;
+        line-height: $line-height-title;
+    }
+}
+.ui-panel-center-multi {
+    > h1,> h2, > h3{
+        height: 75px;
+    }
+}
+
+.ui-panel-more {
+    height: $line-height-bar;
+    line-height: $line-height-bar;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: #fff;
+    .ui-arrowlink {
+        color: #000;
+        margin: 0;
+        padding: 0;
+        padding-right: 10px;
+        &:before {
+            line-height: $line-height-bar;
+            right: 0;
+            color: #000;
+            font-size: 22px;
+            margin-top: -22px;
+        }
+    }
+}
