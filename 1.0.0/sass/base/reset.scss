@@ -37,15 +37,15 @@ figcaption,
 menu,
 button {
     margin: 0;
-    padding: 0;  
+    padding: 0;
 }
 
 body {
-    font-family: "Helvetica Neue",Helvetica,STHeiTi,sans-serif;; 
+    font-family: "Helvetica Neue",Helvetica,STHeiTi,sans-serif;;
     line-height: $line-height-base;
     font-size: $font-size-base;
     color: $txt-default;
-    background-color: $stable-bg;   
+    background-color: $stable-bg;
     -webkit-user-select: none;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
@@ -83,11 +83,11 @@ del {
     text-decoration: line-through;
 }
 
-input, 
-button, 
+input,
+button,
 textarea,
-select, 
-optgroup, 
+select,
+optgroup,
 option{
     font-family: inherit;
     font-size: inherit;
@@ -104,7 +104,7 @@ button{
 
 a{
     -webkit-touch-callout:none;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 :focus{
@@ -113,7 +113,11 @@ a{
 }
 
 em,i {
-    font-style: normal;  
+    font-style: normal;
 }
 
-
+input[type="search"],
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none !important;
+}

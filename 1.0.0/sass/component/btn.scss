@@ -146,7 +146,4 @@
     padding: $button-wrap-padding;
     display:-webkit-box;
     -webkit-box-pack:center;
-    @media (max-width: 320px) {
-        padding: $button-wrap-padding-s;
-    }
 }

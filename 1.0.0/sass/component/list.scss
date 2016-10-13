@@ -55,7 +55,7 @@
 	@include img;
 	width: $list-img-width;
 	height: $list-img-height;
-	margin:0.5px 12px 1px -12px;
+	margin: 0.5px 12px 1px -12px;
 }
 
 .ui-list-img-vertical{
@@ -99,7 +99,7 @@
 	padding-bottom: 0;
 }
 .ui-list li h4 {
-	font-size: $font-size-info;
+	font-size: $font-size-title;
 }
 
 .ui-list:not(.ui-list-text) li > p,
@@ -163,7 +163,6 @@
 	>li{
 		padding-top: 0;
 		padding-bottom: 0;
-		line-height: $line-height-bar;
 	}
 	.ui-list-info{
 		-webkit-box-orient: horizontal;
@@ -174,10 +173,7 @@
 	}
 }
 
-// 新增的样式
-.ui-list-one .ui-list-single-font{
-	line-height: 24px;
-}
+
 .ui-list-small{
 	width:30px;
 	height:30px;

@@ -12,7 +12,7 @@
 .ui-poptips-cnt{
     background-color: $poptips-bg;
     line-height: $poptips-height;
-    height: $poptips-height; 
+    height: $poptips-height;
     color:#fff;
     font-size: $font-size-info;
     text-align: center;
@@ -34,13 +34,12 @@
     @include nowrap;
 }
 .ui-poptips-info i:before{
-    content: $icon-info-block;
-    
+    content: $icon-info;
+
 }
 .ui-poptips-success i:before{
-    content: $icon-success-block;
+    content: $icon-success;
 }
 .ui-poptips-warn i:before{
-    content: $icon-warn-block;
+    content: $icon-warn;
 }
-

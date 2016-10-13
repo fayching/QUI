@@ -7,7 +7,7 @@
     height: $line-height-bar;
     button {
         margin-right: $searchbar-padding;
-        
+
     }
     .ui-searchbar-cancel{
         color: $txt-link;
@@ -34,7 +34,7 @@
     height: $searchbar-height;
     line-height: $searchbar-height;
     position: relative;
-    padding-left: 4px;
+    padding: 0 $wrap-padding;
     -webkit-box-flex: 1;
     display: -webkit-box;
     -webkit-box-pack: center;
@@ -52,10 +52,11 @@
     }
     .ui-icon-search{
         line-height: $searchbar-height;
+        margin-right: 4px;
     }
     .ui-icon-close{
         line-height: $searchbar-height;
-    }   
+    }
 }
 .ui-searchbar-input{
     -webkit-box-flex: 1;

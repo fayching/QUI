@@ -1,7 +1,4 @@
 
-/**
- * 垂直上下居中
- */
 .ui-flex-center {
     width: 100%;
     display: -webkit-box;
@@ -44,7 +41,8 @@
 /**
  * 平铺
  */
-.ui-flex li {
+.ui-flex > li,
+.ui-tiled > li{
     -webkit-box-flex: 1;
     width: 100%;
     text-align: center;

@@ -57,8 +57,7 @@ $button-s-size:                         13px;
 
 $button-before-border-radius:           6px;
 $button-lg-before-border-radius:        10px;
-$button-wrap-padding:                   12px 10px;
-$button-wrap-padding-s:                 10px;
+$button-wrap-padding:                   10px 12px;
 
 $button-group-margin:                   10px;
 
@@ -165,10 +164,10 @@ $tab-current-border:                    #00a5e0;
 
 //tips
 //-------------------------------------------
-$tips-padding:                          15px 0px 15px 12px;
+$tips-padding:                          20px 15px;
 $tips-info:                             #fff;
-// $tips-success:                          #65d521;
-// $tips-warn:                             #f76249;
+$tips-success:                          #65d521;
+$tips-warn:                             #f76249;
 
 $poptips-height:                        40px;
 $poptips-bg:                            rgba(0,0,0,.6);

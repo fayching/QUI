@@ -1,3 +1,4 @@
+@import "../base/icon/icon-checkbox";
 
 .ui-checkbox{
   	display: inline-block;
@@ -17,7 +18,7 @@
 
 }
 .ui-checkbox input:before{
-    @include icon;
+    @include checkbox;
 	content: $icon-unchecked;
     color: $positive-bg;
     position: absolute;

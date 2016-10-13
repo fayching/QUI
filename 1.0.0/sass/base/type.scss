@@ -1,6 +1,6 @@
- 
+
 a{
-    color: $txt-link;  
+    color: $txt-link;
 }
 em{
     color: $txt-highlight;
@@ -16,10 +16,10 @@ h1{
     font-size: $font-size-h1;
 }
 h2{
-    font-size: $font-size-title-lg;
+    font-size: $font-size-title;
 }
 h3,h4{
-    font-size: $font-size-title;
+    font-size: $font-size-base;
 }
 h5,.ui-txt-sub{
     font-size: $font-size-sub;
@@ -50,7 +50,7 @@ h6,.ui-txt-tips{
     color: $txt-highlight;
 }
 .ui-txt-justify{
-    text-align: justify;   
+    text-align: justify;
 }
 .ui-txt-justify-one{
     text-align: justify;
@@ -64,6 +64,3 @@ h6,.ui-txt-tips{
     width:100%;
     height:0;
 }
-
-
-

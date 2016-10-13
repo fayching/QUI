@@ -56,7 +56,7 @@
 }
 
 @mixin icon{
-    font-family: "iconfont" !important;
+    font-family: "icon-min" !important;
     font-size: 32px;
     line-height: $line-height-bar;
     font-style: normal;
@@ -66,8 +66,8 @@
     color: rgba(0,0,0,.5);
 }
 @mixin arrowlink{
-    font-family: $icon-arrow-fontfamily !important;
-    font-size: 32px;
+    font-family:  "icon-min"  !important;
+    font-size: 16px;
     line-height: $line-height-bar;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -78,38 +78,47 @@
     position: absolute;
     right: $wrap-padding;
     top: 50%;
-    margin-top: -25px;
-    margin-right: -11px;
+    margin-top: -$line-height-bar/2;
 }
-@mixin icon-tips{
-    font-family: $icon-tips-fontfamily !important;
+@mixin corner{
+    font-family: "icon-corner" !important;
     font-size: 32px;
     line-height: $line-height-bar;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     display: block;
-    color: #fff;
+    color: rgba(0,0,0,.5);
 }
-@mixin icon-close{
-    font-family: $icon-close-fontfamily !important;
+@mixin checkbox{
+    font-family: "icon-checkbox" !important;
     font-size: 32px;
     line-height: $line-height-bar;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     display: block;
-    color: $icon-color;
+    color: rgba(0,0,0,.5);
 }
-@mixin icon-search{
-    font-family: $icon-search-fontfamily !important;
+@mixin notice{
+    font-family: "icon-checkbox" !important;
     font-size: 32px;
     line-height: $line-height-bar;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     display: block;
-    color: $icon-color;
+    color: rgba(0,0,0,.5);
+}
+@mixin tag{
+    font-family: "icon-tag" !important;
+    font-size: 32px;
+    line-height: $line-height-bar;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    display: block;
+    color: rgba(0,0,0,.5);
 }
 @mixin nowrap{
     max-width: 100%;

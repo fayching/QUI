@@ -32,10 +32,10 @@ $txt-padding-bottom:    10px;
 //fontsize
 // ---------------------------------
 $font-size-base:        16px;
-$font-size-title:       16px;
+$font-size-title:       18px;
 $font-size-h1:          18px;
-$font-size-title-lg:    17px;
-$font-size-info:        18px;
+// $font-size-title-lg:    18px;
+$font-size-info:        14px;
 $font-size-sub:         14px;
 $font-size-tips:        12px;
 
@@ -60,36 +60,57 @@ $z-index-overlay:                       9999;
 
 //iconfont
 //----------------------------------
+$icon-arrow:                           "\f000";
+$icon-success:                         "\f001";
+$icon-info:                            "\f002";
+$icon-warn:                            "\f003";
+$icon-close:                           "\f004";
+$icon-search:                          "\f005";
 
-$icon-arrow:                            "\f600";
-$icon-checked:                          "\f601";
-$icon-checked-s:                        "\f602";
-$icon-info-block:                       "\f603";
-$icon-success-block:                    "\f604";
-$icon-warn-block:                       "\f605";
-$icon-info:                             "\f606";
-$icon-success:                          "\f607";
-$icon-warn:                             "\f608";
-$icon-warn-lg:                          "\f609";
-$icon-unchecked:                        "\f610";
-$icon-unchecked-s:                      "\f611";
-$icon-vip:                              "\f612";
-$icon-svip:                             "\f613";
-$icon-return:                           "\f614";
-$icon-close:                            "\f60a";
-$icon-close-page:                       "\f60b";
-$icon-search:                           "\f60c";
-$icon-tag-pop:                          "\f60f";
-$icon-angle-s:                          "\f618";
-$icon-angle:                            "\f616";
-$icon-angle-lg:                         "\f619";
-$icon-color:                            #8e8e93;
+$icon-checked:                          "\f100";
+$icon-checked-s:                        "\f101";
+$icon-unchecked:                        "\f102";
+$icon-unchecked-s:                      "\f103";
+
+$icon-corner-pop:                       "\f200";
+$icon-angle-s:                          "\f203";
+$icon-angle:                            "\f202";
+$icon-angle-lg:                         "\f201";
+
+$icon-tag-vip:                              "\f300";
+$icon-tag-svip:                             "\f301";
+$icon-tag-checkbox:                         "\f302";
+
+$icon-warn-lg:                              "\f400";
+// $icon-checked:                          "\f601";
+// $icon-checked-s:                        "\f602";
+// $icon-unchecked:                        "\f610";
+// $icon-unchecked-s:                      "\f611";
+//
+// $icon-warn-lg:                          "\f609";
+//
+//
+//
+// $icon-arrow:                            "\f600";
+// $icon-info:                             "\f606";
+// $icon-success:                          "\f607";
+// $icon-warn:                             "\f608";
+// $icon-close:                            "\f60a";
+// $icon-search:                           "\f60c";
+//
+//
+//
+// $icon-vip:                              "\f612";
+// $icon-svip:                             "\f613";
+//
+// $icon-corner-pop:                       "\f60f";
+// $icon-angle-s:                          "\f618";
+// $icon-angle:                            "\f616";
+// $icon-angle-lg:                         "\f619";
+
+$icon-color:                                #938F87;
 
 
-$icon-arrow-fontfamily:                 "iconfont";
-$icon-tips-fontfamily:                  "iconfont";
-$icon-search-fontfamily:                "iconfont";
-$icon-close-fontfamily:                 "iconfont";
 
 //active
 //---------------------------------------

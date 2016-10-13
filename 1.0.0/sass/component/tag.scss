@@ -1,3 +1,4 @@
+@import "../base/icon/icon-tag";
 .ui-tag-b-default {
     position: absolute;
     z-index: 9;
@@ -46,7 +47,7 @@
 .ui-tag-vip:before,
 .ui-tag-svip:before,
 .ui-tag-selected:after{
-    @include icon;
+    @include tag;
     position: absolute;
 }
 .ui-tag-vip,
@@ -70,15 +71,15 @@
 .ui-tag-vip:before{
     background-color: #ff0000;
     color: #fffadf;
-    content:  $icon-vip;
+    content:  $icon-tag-vip;
 }
 .ui-tag-svip:before{
     background-color: #ffd400;
     color: #b7440e;
-    content: $icon-svip;
+    content: $icon-tag-svip;
 }
 .ui-tag-selected:after{
-    content: $icon-checked; 
+    content: $icon-tag-checkbox;
     color: $positive-bg;
     right: 5px;
     top: 5px;
@@ -108,7 +109,7 @@
 .ui-tag-svip:before{
     background-color: #ffd400;
     color: #b7440e;
-    content: $icon-svip;
+    content: $icon-tag-svip;
 }
 .ui-tag-freelimit:before{
     background-color: #18b4ed;

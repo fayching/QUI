@@ -1,4 +1,4 @@
-
+@import "../base/icon/icon-notice";
 /**
  * 出错页面
  */
@@ -17,7 +17,7 @@
     display: block;
 	margin-bottom: 20px;
     &:before{
-        @include icon;
+        @include notice;
         content: $icon-warn-lg;
         font-size: 100px;
         line-height: 100px;
