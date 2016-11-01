@@ -60,8 +60,7 @@
 //灰色背景及彩色背景
 .ui-btn-highlight{
     background-color:transparent;
-    border-color:#fff;
-    color:#fff;
+    color:#fff; 
     &:not(.disabled):not(:disabled):active,
     &.active{
         background-color: rgba(255,255,255,.4);
@@ -128,8 +127,6 @@
 //----------------------------------------------
 .ui-btn-highlight{
     background-color:transparent;
-    border-color:#fff;
-    color:#fff;
 }
 .ui-btn-lg-nowhole{
     width: $button-lg-nowhole-width;
@@ -146,4 +143,24 @@
     padding: $button-wrap-padding;
     display:-webkit-box;
     -webkit-box-pack:center;
+}
+
+
+//2倍像素比
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+  .ui-btn:before, .ui-btn-lg:before, .ui-btn-s:before,.ui-btn-lg-nowhole:before {
+      content: "";
+      width: 200%;
+      height: 200%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 1px solid #cacccd;
+      -webkit-transform: scale(0.5);
+      -webkit-transform-origin: 0 0;
+      padding: 1px;
+      -webkit-box-sizing: border-box;
+      border-radius: 6px;
+      pointer-events: none;
+  }
 }

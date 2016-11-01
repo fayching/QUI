@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <title>OUI Demo</title>
+    <title>QUI Demo</title>
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="./demo.css">
@@ -42,29 +42,13 @@
                     <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
                     <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
                 </ul>
+                <ul class="ui-slider-indicators"><li class="current">1</li><li class="">2</li><li class="">3</li></ul>
             </div>
             内容
 
-            
+
         </div>
-        <script class="demo-script">
-        (function (){
-            var slider = new fz.Scroll('.ui-slider', {
-                role: 'slider',
-                indicator: true,
-                autoplay: true,
-                interval: 3000
-            });
 
-            slider.on('beforeScrollStart', function(fromIndex, toIndex) {
-                console.log(fromIndex,toIndex)
-            });
-
-            slider.on('scrollEnd', function(cruPage) {
-                console.log(cruPage)
-            });
-        })();
-        </script>
     </div>
 </section>
 

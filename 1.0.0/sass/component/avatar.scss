@@ -4,6 +4,7 @@
  */
 
 .ui-avatar,
+.ui-square,
 .ui-avatar-lg,
 .ui-avatar-s,
 .ui-avatar-one,
@@ -15,6 +16,11 @@
 .ui-avatar{
     @include avatar;
 }
+.ui-square{
+    @include square($square-width);
+}
+
+
 .ui-avatar-lg,
 .ui-avatar-one{
     @include avatar($avatar-width-lg);
@@ -28,4 +34,13 @@
 .ui-avatar-tiled{
     @include avatar($avatar-width-tiled);
     display: inline-block;
+}
+
+/**/
+.ui-list-img-vertical{
+   @include vertical($vertical-width);
+}
+
+.ui-list-img-horizontal{
+  @include horizontal($horizontal-width);
 }

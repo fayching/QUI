@@ -21,10 +21,8 @@ h1{
     position: absolute;
 }
 .ui-tab-nav{
-    top: 45px;
 }
 .ui-tab-content{
-    margin-top: 45px;
 }
 .demo-block > .ui-list,.demo-block >.ui-form,.demo-block >.ui-tooltips{margin-bottom: 20px;}
 .content h3{

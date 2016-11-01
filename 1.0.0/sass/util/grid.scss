@@ -14,7 +14,7 @@
     overflow: hidden;
     ul{
       height: auto;
-      margin: 0px -1px;
+      margin: 0px -2px -2px;
       overflow: hidden;
     }
     li{
@@ -23,16 +23,13 @@
         float: left;
         position: relative;
         -webkit-box-sizing: border-box;
-        padding: 0 1px 2px 1px;
+        padding: 0 2px 2px 0;
     }
 }
 .ui-grid-trisect>ul li{
     width: 33.3333%;
 }
-.ui-grid-trisect-img{
-    padding-top: 141.93%;
-}
-.ui-grid h4{
+.ui-grid-info h4{
     position: relative;
     padding: 7px 0 3px;
     margin-right: 1px;
@@ -41,12 +38,13 @@
     text-align: left;
     box-sizing: border-box;
 }
-.ui-grid p{
+.ui-grid-info p{
   font-size: 12px;
   padding-left: 10px;
   padding-bottom: 15px;
+  color: #777;
 }
-.ui-grid h4 span{
+.ui-grid-info h4 span{
     display: inline-block;
     margin-left: 12px;
     color: $txt-info;
@@ -62,10 +60,5 @@
 .ui-grid-info{
     box-sizing:content-box;
     width: 100%;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2){
-  .ui-grid-info{
-      padding: 0px 1px 0 0;
-  }
+    padding: 0px 1px 0 0;
 }

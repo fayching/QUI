@@ -22,7 +22,7 @@ $input-wrap-bg: #f7f7f8;
     padding-left: 10px;
     -webkit-box-flex: 1;
     input::-webkit-input-placeholder{
-        color: #f7f7f8;
+        color: #777;
     }
 }
 
@@ -34,4 +34,7 @@ $input-wrap-bg: #f7f7f8;
   	-webkit-appearance: none;
   	outline: 0;
 
+}
+.ui-input-text{
+    background: #fff;
 }

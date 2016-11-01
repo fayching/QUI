@@ -1,4 +1,4 @@
-  
+
 /**
  * 弹窗类
  */
@@ -9,7 +9,6 @@
 	width: 100%;
 	height: 100%;
 	z-index: $z-index-overlay;
-	display: -webkit-box;
 	-webkit-box-orient: horizontal;
 	-webkit-box-pack: center;
 	-webkit-box-align: center;
@@ -18,48 +17,53 @@
 }
 .ui-dialog.show{
 	display: -webkit-box;
-	display: box;
 }
 .ui-dialog-cnt{
 	border-radius: $dialog-border-radius;
-	width: $dialog-cnt-width;
+	width: 320px;
+    @media screen and ( max-width: 320px ) {
+        width: 296px;
+    }
 	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
 	pointer-events: auto;
 	background-color: $dialog-cnt-bg;
 	position: relative;
-    font-size: $font-size-base;
-    line-height: $line-height-base;
     border-top: 4px solid $dialog-blue;
     -webkit-box-sizing: border-box;
     color: $dialog-color;
 }
+.ui-dialog-hd{
+    width: 100%;
+    text-align: center;
+    min-height:45px;
+    display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	overflow: hidden;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
 .ui-dialog-bd{
-	min-height: $dialog-bd-height-min;
+	min-height: 46px;
 	border-top-left-radius: $dialog-border-radius;
 	border-top-right-radius: $dialog-border-radius;
 	// padding: $dialog-bd-padding;
-    padding: 18px 28px 20px 28px;
+    padding: 18px 28px 18px 28px;
 	display: -webkit-box;
-	display: box;
 	-webkit-box-pack: center;
 	-webkit-box-align: center;
 	-webkit-box-orient: vertical;
-    -webkit-box-sizing: border-box;
 }
-.ui-dialog-bd > h4{
-    font-size: 18px;
+.ui-dialog-bd h3{
+    font-size: 20px;
     width: auto;
-    margin: 0 auto;
-
+    margin: 1px auto 5px;
 }
+
 .ui-dialog-bd > p{
-    // margin-top: 16px;
-    margin-top: 8px;
     font-size: $font-size-base;
     width: auto;
-    // line-height: $line-height-base;
-    line-height: 1.5;
+    margin: 2px auto;
 }
 .ui-dialog-ft{
     border-bottom-left-radius: $dialog-border-radius;
@@ -73,20 +77,17 @@
     line-height: $dialog-ft-height;
 }
 .ui-dialog-ft button{
-    color: $dialog-color;
+    font-size: 18px;
     text-align: center;
     border-right: 1px $bordercolor solid;
     width: 100%;
     line-height: $dialog-ft-height;
     background: transparent;
     display: block;
-    margin: 0 !important;
+    margin: 0;
     -webkit-box-flex: 1;
-    &.btn-recommand{
-        color: $dialog-blue;
-    }
     &:active {
-        background-color: $dialog-btn-active !important;
+        background-color: $dialog-btn-active;
     }
     &:first-child{
         border-bottom-left-radius: $dialog-border-radius;
@@ -94,13 +95,13 @@
     &:last-child{
         border-right: 0;
         border-bottom-right-radius:$dialog-border-radius;
-    }     
+    }
 }
 @media screen and (-webkit-min-device-pixel-ratio:2.0){
     .ui-dialog-ft{
         position: relative;
         border: 0;
-        background-position: left top; 
+        background-position: left top;
         background-image: $border-t;
         background-repeat: repeat-x;
         -webkit-background-size: 100% 1px;
@@ -113,21 +114,16 @@
         -webkit-background-size: 1px 100%;
         &:last-child{
             background: none;
-        } 
+        }
     }
 }
 // 结构化消息
 .ui-dialog-function .ui-dialog-bd{
-    // padding: 24px 20px;
-    padding: 22px 20px  20px 24px;
+    padding: 18px 20px 24px;
     -webkit-box-align: inherit;
 }
-.ui-dialog-function h4{
-    text-align: left;
-}
 .ui-dialog-function .ui-dialog-item {
-    // margin-top: 16px;
-    margin-top: 11px;
+    margin-top: 6px;
     background-color: #fff;
     width: 100%;
     display: -webkit-box;
@@ -143,13 +139,9 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-box-pack: center;
-    line-height: $line-height-base;
 }
-.ui-dialog-function .ui-dialog-info>h5 {
-    font-size: $font-size-base;
-}
+
 .ui-dialog-function .ui-dialog-info>p{
-    font-size: $font-size-base;
     color: #777;
 }
 .ui-dialog-function .ui-dialog-info>span{
@@ -158,17 +150,18 @@
     color: #777;
 }
 // 运营提示
-.ui-dialog-hd{
-    width: $dialog-cnt-width;
-    height: 116px;
-    margin-top: -4px;
-}
-.ui-dialog-hd>span{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    -webkit-background-size: 100% 100%;
+.ui-dialog-operate{
+    .ui-dialog-cnt{
+        border: 0;
+		margin-top: -72px;
+    }
+
+    .ui-img{
+        padding-top: 46.875%;
+    }
+    .ui-dialog-bd{
+        padding: 18px 16px 20px;
+    }
 }
 // 多项选择
 .ui-dialog-ft-muti{
@@ -178,7 +171,6 @@
 }
 .ui-dialog-ft-muti button{
     width: 100%;
-    box-sizing: border-box;
     -webkit-box-sizing: border-box;
     height: 45px;
     line-height: 45px;
@@ -192,12 +184,26 @@
     .ui-dialog-ft-muti button{
         position: relative;
         border: 0;
-        background-position: left bottom; 
+        background-position: left bottom;
         background-image: $border-b;
         background-repeat: repeat-x;
         -webkit-background-size: 100% 1px;
         &:last-child{
             background: none;
-        } 
+        }
     }
+}
+.ui-dialog-close:before{
+    @include icon;
+    content: $icon-close-page;
+    color: #fff;
+    display: block;
+    line-height: 32px;
+    position: absolute;
+    bottom: -72px;
+	left: 50%;
+	margin-left: -16px;
+}
+.ui-dialog-close.active{
+    opacity: $active-opacity;
 }
